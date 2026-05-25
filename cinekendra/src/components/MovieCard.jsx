@@ -11,12 +11,15 @@ function MovieCard(props) {
 
       <p>📅 {props.genre}</p>
 
-      <button className="watch-btn">
-        + Watchlist
+      <button
+        className="watch-btn"
+        onClick={props.onAction}
+      >
+        {props.buttonText}
       </button>
 
     </div>
-  )
+  );
 }
 
-export default MovieCard
+export default MovieCard;
