@@ -1,0 +1,129 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial,sans-serif;
+  background:#121212;
+  color:white;
+}
+
+/* Navbar */
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:20px 60px;
+
+  background:#1d1d1d;
+}
+
+nav h1{
+  color:#ff3d00;
+}
+
+nav div button{
+  margin-left:10px;
+  padding:10px 15px;
+
+  border:none;
+  border-radius:8px;
+
+  background:#2a2a2a;
+  color:white;
+
+  cursor:pointer;
+}
+
+/* Hero */
+
+section{
+  padding:50px 60px;
+}
+
+section p{
+  margin:15px 0;
+  color:#bdbdbd;
+}
+
+input{
+  width:60%;
+  padding:14px;
+
+  border:none;
+  border-radius:10px;
+
+  outline:none;
+}
+
+section button{
+  margin-left:10px;
+
+  padding:14px 20px;
+
+  border:none;
+  border-radius:10px;
+
+  background:#ff3d00;
+  color:white;
+
+  cursor:pointer;
+}
+
+/* Movies */
+
+/* Movie container */
+
+/* Movie container */
+
+.movie-container{
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:30px;
+
+  margin-top:30px;
+}
+
+
+/* Movie card */
+
+.movie-card{
+
+  width:220px;
+
+  background:#1f1f1f;
+
+  padding:15px;
+
+  border-radius:15px;
+
+  transition:0.3s;
+
+  text-align:center;
+
+}
+
+.movie-card:hover{
+
+  transform:translateY(-10px);
+
+}
+
+
+img{
+
+  width:100%;
+
+  height:300px;
+
+  object-fit:cover;
+
+  border-radius:10px;
+
+}
