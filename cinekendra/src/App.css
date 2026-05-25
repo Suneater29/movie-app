@@ -76,10 +76,6 @@ section button{
 
 /* Movies */
 
-/* Movie container */
-
-/* Movie container */
-
 .movie-container{
   display:flex;
 
@@ -125,5 +121,80 @@ img{
   object-fit:cover;
 
   border-radius:10px;
+
+}
+
+.hero{
+  text-align:center;
+
+  padding:80px 20px;
+}
+
+.hero h2{
+  font-size:45px;
+
+  margin-bottom:15px;
+}
+
+.hero p{
+
+  margin-bottom:25px;
+
+  color:#bdbdbd;
+}
+
+.search-box{
+
+display:flex;
+
+justify-content:center;
+
+gap:10px;
+
+margin-top:20px;
+
+}
+
+.search-box input{
+
+width:500px;
+
+max-width:80%;
+
+padding:15px;
+
+font-size:16px;
+
+}
+
+.search-box button{
+
+margin:0;
+}
+.watch-btn{
+
+margin-top:15px;
+
+width:100%;
+
+padding:10px;
+
+border:none;
+
+border-radius:8px;
+
+background:#ff3d00;
+
+color:white;
+
+cursor:pointer;
+
+font-weight:bold;
+
+}
+
+.watch-btn:hover{
+
+opacity:0.9;
 
 }

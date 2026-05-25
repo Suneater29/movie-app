@@ -4,12 +4,16 @@ function MovieCard(props) {
 
       <img
         src={props.image}
-        alt="movie"
+        alt={props.title}
       />
 
       <h3>{props.title}</h3>
 
-      <p>{props.genre}</p>
+      <p>📅 {props.genre}</p>
+
+      <button className="watch-btn">
+        + Watchlist
+      </button>
 
     </div>
   )

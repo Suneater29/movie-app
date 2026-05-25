@@ -14,7 +14,7 @@ function App() {
 
     try {
       const response = await fetch(
-        `https://www.omdbapi.com/?apikey=${API_KEY}&s=${search}`
+        `https://www.omdbapi.com/?apikey=${API_KEY}&s=${search}`,
       );
 
       const data = await response.json();
@@ -23,14 +23,14 @@ function App() {
         const formattedMovies = data.Search.map((movie) => ({
           title: movie.Title,
           genre: movie.Year,
-          image: movie.Poster !== "N/A"
-            ? movie.Poster
-            : "https://placehold.co/200x300",
+          image:
+            movie.Poster !== "N/A"
+              ? movie.Poster
+              : "https://placehold.co/200x300",
         }));
 
         setMovies(formattedMovies);
       }
-
     } catch (error) {
       console.log(error);
     }
@@ -42,21 +42,21 @@ function App() {
     <>
       <Navbar />
 
-      <section>
-        <h2>Find Movies With AI</h2>
+      <section className="hero">
+        <h2>Find Movies With AI 🎬</h2>
 
-        <p>Describe your mood and get movie recommendations</p>
+        <p>Describe your mood and discover movies instantly</p>
 
-        <input
-          type="text"
-          placeholder="Batman..."
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
+        <div className="search-box">
+          <input
+            type="text"
+            placeholder="Batman..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
 
-        <button onClick={handleSearch}>
-          Search
-        </button>
+          <button onClick={handleSearch}>Search</button>
+        </div>
       </section>
 
       <section>
